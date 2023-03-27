@@ -212,11 +212,11 @@
 														</td>
 													</c:if>
 													<c:if test="${sessionScope.employee.empId ne '2202041'}">
-														<td class="py-3">${board.boardId}</td>
+														<td class="py-3" style="font-size: 10px;">${board.boardId}</td>
 													</c:if>
-													<td><span onclick="requestBoardDetail(${board.boardId})">${board.boardTitle}</span></td>
-													<td>${board.empName}</td>
-													<td><fmt:formatDate value="${board.boardDate}" pattern="yyyy/MM/dd"/></td>
+													<td onclick="requestBoardDetail(${board.boardId})" style="font-size: 13px;">${board.boardTitle}</td>
+													<td style="font-size: 10px;">${board.empName}</td>
+													<td style="font-size: 10px;"><fmt:formatDate value="${board.boardDate}" pattern="yyyy/MM/dd"/></td>
 												</tr>
 												</c:forEach>
 											</tbody>

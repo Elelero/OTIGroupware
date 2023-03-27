@@ -22,7 +22,7 @@
     <select id="getBoard" resultMap="boardResultResultMap">
         SELECT board_id, emp_id, emp_name, board_category_id, board_title, board_content, board_date, board_file_yn
         FROM boards
-        WHERE board_id = 21
+        WHERE board_id = 14
     </select>
 
  	<insert id="insertBoard" parameterType="board">
